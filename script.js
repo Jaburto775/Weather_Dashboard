@@ -20,3 +20,10 @@ function init(){
          cities = storedCities;
           }
 }
+
+function storeCities(){
+   localStorage.setItem("cities", JSON.stringify(cities));
+   console.log(localStorage);
+ }
+
+ 
