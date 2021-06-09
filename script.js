@@ -14,3 +14,9 @@ function getDay(date){
     return showDate;
 }
 
+function init(){
+    var storedCities = JSON.parse(localStorage.getItem("cities"));
+        if (storedCities !== null) {
+         cities = storedCities;
+          }
+}
